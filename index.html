@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 contenteditable="true">Create a todo</h1>
+        <p>What's on your todo list?</p>
+        <input type="text" id="taskInput" placeholder="e.g. get a milk">
+        <p>Pick a category</p>
+        <select id="category">
+            <option value="business">Business</option>
+            <option value="personal">Personal</option>
+        </select>
+        <button onclick="addTask()">Add todo</button>
+        <h2>TODO LIST</h2>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
